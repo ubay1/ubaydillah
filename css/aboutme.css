@@ -10,7 +10,7 @@ main {
   z-index: 30;
 }
 
-main .bg-greeting {
+main .aboutme {
   margin-top: 120px;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -21,21 +21,15 @@ main .bg-greeting {
   align-items: center;
 }
 
-main .bg-greeting .photo img {
-  width: 250px;
-  height: 250px;
-  filter: grayscale(0);
-  pointer-events: none;
-}
-
-main .bg-greeting .greeting {
+main .aboutme .hallo {
   text-align: center;
   font-size: 60px;
   font-family: DM Serif Display, sans-serif;
 }
 
-main .bg-greeting .description {
-  font-family: DM Sans, sans-serif;
+main .aboutme .greeting {
+  text-align: justify;
   font-size: 20px;
+  font-family: DM Sans, sans-serif;
   color: #b2cccc;
 }
