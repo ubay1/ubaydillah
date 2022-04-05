@@ -9,7 +9,7 @@ body {
 header {
   /* background-color: mediumaquamarine; */
   background-color: transparent;
-  z-index: 20;
+  z-index: 40;
   position: fixed;
   top: 0;
   width: 100%;
