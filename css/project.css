@@ -1,0 +1,88 @@
+/* main */
+
+main {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  color: white;
+  /* height: 100vh; */
+  min-height: 100%;
+  z-index: 30;
+}
+
+main .project {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .project > .title {
+  text-align: center;
+  font-size: 60px;
+  font-family: DM Serif Display, sans-serif;
+}
+
+main .project > .list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: DM Sans, sans-serif;
+  color: #b2cccc;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+main .project > .list > .image img {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+
+main .project > .list > .content {
+  max-width: 300px;
+  min-width: 100px;
+}
+main .project > .list > .content > .title {
+  padding: 10px;
+  color: black;
+  font-family: DM Serif Display, sans-serif;
+}
+main .project > .list > .content > .subtitle {
+  padding: 10px;
+  padding-top: 0px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  color: black;
+}
+main .project > .list > .content > .linkGithub {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  /* background-color: lightgray; */
+  border-radius: 0px 0px 10px 0px;
+}
+main .project > .list > .content > .linkGithub a {
+  color: black;
+  text-decoration: none;
+}
+
+main .project > .list > .content > .linkGithub a img {
+  width: 20px;
+  height: 20px;
+}

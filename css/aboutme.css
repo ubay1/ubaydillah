@@ -28,7 +28,7 @@ main .aboutme .hallo {
 }
 
 main .aboutme .greeting {
-  text-align: justify;
+  text-align: center;
   font-size: 20px;
   font-family: DM Sans, sans-serif;
   color: #b2cccc;
