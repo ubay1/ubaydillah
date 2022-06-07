@@ -26,8 +26,19 @@ main .project > .title {
   font-size: 60px;
   font-family: DM Serif Display, sans-serif;
 }
+main .project > .bg-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  main .project > .bg-list {
+    flex-direction: column;
+  }
+}
 
-main .project > .list {
+main .project > .bg-list > .list {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -40,23 +51,65 @@ main .project > .list {
   border-radius: 10px;
 }
 
-main .project > .list > .image img {
+main .project > .bg-list > .list > .image img {
   width: 100px;
   height: 100%;
   object-fit: cover;
   border-radius: 10px 0px 0px 10px;
 }
 
-main .project > .list > .content {
+main .project > .bg-list > .list > .content {
   max-width: 300px;
   min-width: 100px;
 }
-main .project > .list > .content > .title {
+main .project > .bg-list > .web-movie,
+.web-kitab {
+  position: relative;
+  background-color: transparent !important;
+  /* opacity: 1; */
+}
+main .project > .bg-list > .web-movie::after {
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  background: url("../images/movie.webp");
+  background-size: cover;
+  background-position: center;
+}
+main .project > .bg-list > .web-kitab::after {
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  background: url("../images/book.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main .project > .bg-list > .list > .image {
+  display: none;
+}
+main .project > .bg-list > .list > .content > .title {
+  /* font-weight: bold; */
+  color: white !important;
   padding: 10px;
   color: black;
   font-family: DM Serif Display, sans-serif;
 }
-main .project > .list > .content > .subtitle {
+main .project > .bg-list > .list > .content > .subtitle {
+  /* font-weight: bold; */
+  color: white !important;
   padding: 10px;
   padding-top: 0px;
   font-size: 14px;
@@ -65,7 +118,8 @@ main .project > .list > .content > .subtitle {
   text-align: justify;
   color: black;
 }
-main .project > .list > .content > .linkGithub {
+
+main .project > .bg-list > .list > .content > .linkGithub {
   font-size: 14px;
   padding-left: 10px;
   padding-right: 10px;
@@ -77,12 +131,14 @@ main .project > .list > .content > .linkGithub {
   /* background-color: lightgray; */
   border-radius: 0px 0px 10px 0px;
 }
-main .project > .list > .content > .linkGithub a {
+main .project > .bg-list > .list > .content > .linkGithub a {
   color: black;
   text-decoration: none;
 }
 
-main .project > .list > .content > .linkGithub a img {
+main .project > .bg-list > .list > .content > .linkGithub a img {
+  background-color: white;
+  border-radius: 50%;
   width: 20px;
   height: 20px;
 }
